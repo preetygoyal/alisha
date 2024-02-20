@@ -1,0 +1,29 @@
+pipeline {
+    agent any // This specifies that the pipeline can run on any available agent
+
+    stages {
+        stage("stage 1") {
+            steps {
+                echo "this is stage 1"
+            }
+        }
+
+        stage("stage 2") {
+            steps {
+                echo "this is stage 2"
+            }
+        }
+
+        stage("stage 3") {
+            steps {
+                echo "this is stage 3" // Corrected from "this is stage 4" to "this is stage 3"
+            }
+        }
+
+        stage("stage 4") {
+            steps {
+                echo "this is stage 4"
+            }
+        }
+    }
+}
